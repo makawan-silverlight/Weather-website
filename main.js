@@ -54,7 +54,9 @@ btn.addEventListener('click', async() => {
             section.style.opacity = '1';
         },500)
 
-        const hour24 = Number(date.time.slice(10,13))
+        const hour24 = Number(date.time.slice(10,12))
+        
+        
         if(hour24 >= 6 && hour24 < 18){
             if(main.classList.contains('night')){
                 main.classList.remove('night');
