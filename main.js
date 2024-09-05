@@ -55,7 +55,7 @@ btn.addEventListener('click', async() => {
         },500)
 
         const hour24 = Number(date.time.slice(10,12))
-        
+        console.log(date.time.slice(10,12));
         
         if(hour24 >= 6 && hour24 < 18){
             if(main.classList.contains('night')){
@@ -132,7 +132,6 @@ btn.addEventListener('click', async() => {
     }
     
     
-    console.log('hello');
     
     input.value = '';
 })
