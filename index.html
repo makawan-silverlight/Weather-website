@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <label class="input">
+            <i class="fa-solid fa-location-dot"></i>
+            <input id="location" type="text" placeholder="Enter Your Location">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </label>
+        <section>
+            <h1 id="city">Bangkok</h1>
+            <p id="date">April 23, 01:03am</p>
+            <h2 id="temp">31°</h2>
+
+            <p class="description">Overcast clouds</p>
+            <div class="box">
+                <div class="info">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <p id="humidity">0%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <p id="wind">0 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
